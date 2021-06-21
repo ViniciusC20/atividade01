@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "php_vinicius";
+$dbname = "um";
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname; charset=utf-8", $username, $password);
   // set the PDO error mode to exception
