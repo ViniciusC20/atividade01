@@ -18,12 +18,14 @@
       <h2>D<a href="CRUD/delete.php">elete</a></h2>
       </head>
 
-    <form name ="Form_cad" action="CRUD/create.php">
-        <input class="form-control form-control-lg" type="text" placeholder="Id" aria-label=".form-control-lg example">
-<input class="form-control" type="text" placeholder="Nome" aria-label="default input example"><br>
-<input class="form-control form-control-sm" type="text" placeholder="Disciplina" aria-label=".form-control-sm example">
-<input class="form-control form-control-lg" type="text" placeholder="Nota 1" aria-label=".form-control-lg example"><br>
-<input class="form-control" type="text" placeholder="Nota 2" aria-label="default input example"><br><br>
+      main
+
+    <form name ="Form_cad" action="CRUD/create.php" method="POST">
+        <input class="form-control form-control-lg" type="text" name="Id" placeholder="Id" aria-label=".form-control-lg example">
+<input class="form-control" type="text" name="nome" placeholder="Nome" aria-label="default input example"><br>
+<input class="form-control form-control-sm" type="text" name="Disciplina" placeholder="Disciplina" aria-label=".form-control-sm example">
+<input class="form-control form-control-lg" type="text" name="nota1" placeholder="Nota 1" aria-label=".form-control-lg example"><br>
+<input class="form-control" type="text" name="nota2" placeholder="Nota 2" aria-label="default input example"><br><br>
       
         <button type="submit" class="btn btn-primary">Alterar/Cadastrar</button>
       </form>
