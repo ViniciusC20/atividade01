@@ -3,12 +3,11 @@
 <head>
 <style>
 table, th, td {
-    border : 1px solid black ;
+border : 1px solid black ;
 }
-</style>
-</head>
-<body>
-
+  </style>
+  </head>
+  <body>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -21,7 +20,7 @@ try {
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT Id, Nome, Disciplina, nota1, nota2 FROM 1atividade";
+$sql = "SELECT Id, Nome, Disciplina, nota1, nota2 FROM atividade01";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

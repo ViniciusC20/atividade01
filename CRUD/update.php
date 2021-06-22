@@ -9,7 +9,7 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $sql = "UPDATE 1atividade SET Disciplina='Sistema Operacional(S.O)' WHERE id=2";
+  $sql = "UPDATE atividade01 SET Disciplina='Sistema Operacional(S.O)' WHERE id=2";
 
   // Prepare statement
   $stmt = $conn->prepare($sql);
@@ -18,7 +18,7 @@ try {
   $stmt->execute();
 
   // echo a message to say the UPDATE succeeded
-  echo $stmt->rowCount() . " records UPDATED successfully";
+  echo $stmt->rowCount() . "Parabéns banco atualizado com sucesso!!!";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }

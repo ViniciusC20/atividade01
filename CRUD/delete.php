@@ -10,7 +10,7 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   // sql to delete a record
-  $sql = "DELETE FROM 1atividade WHERE id=3";
+  $sql = "DELETE FROM atividade01 WHERE id=3";
 
   // use exec() because no results are returned
   $conn->exec($sql);
