@@ -3,13 +3,13 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "1atividade";
-try {
 
+try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname; charset=utf8", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $sql = "UPDATE 1atividade SET lastname='Doe' WHERE id=2";
+  $sql = "UPDATE 1atividade SET Disciplina='Sistema Operacional(S.O)' WHERE id=2";
 
   // Prepare statement
   $stmt = $conn->prepare($sql);
