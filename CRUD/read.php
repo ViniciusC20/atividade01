@@ -1,39 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table, th, td {
-border : 1px solid black ;
-}
-  </style>
-  </head>
-  <body>
 <?php
+echo "<table style='border: solid 1px black;'>";
+echo "<tr><th>Id</th><th>Nome</th><th>Disciplina</th><th>nota1</th><th>nota2</th></tr>";
+
+class TableRows extends RecursiveIteratorIterator {
+  function __construct($it) {
+    parent::__construct($it, self::LEAVES_ONLY);
+  }
+
+  function current() {
+    return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
+  }
+
+  function beginChildren() {
+    echo "<tr>";
+  }
+
+  function endChildren() {
+    echo "</tr>" . "\n";
+  }
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "1atividade";
+
 try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $stmt = $conn->prepare("SELECT * FROM atividade01");
+  $stmt->execute();
 
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname; charset=utf8", $username, $password);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT Id, Nome, Disciplina, nota1, nota2 FROM atividade01";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  echo "<table><tr><th>Id</th><th>Nome</th></tr>";
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "<tr><td>".$row["Id"]."</td><td>".$row["Nome"]."</td><td>".$row["Disciplina"]."</td><td>".$row["nota1"]."</td><td>".$row["nota2"]."<td></td></tr>";
+  // set the resulting array to associative
+  $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+    echo $v;
   }
-  echo "</table>";
-} else {
-  echo "0 results";
+} catch(PDOException $e) {
+  echo "Error: " . $e->getMessage();
 }
-$conn->close();
+$conn = null;
+echo "</table>";
 ?>
-</body>
-</html>

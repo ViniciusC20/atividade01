@@ -8,8 +8,8 @@
 </head>
 <body>
       <h2> Primeira Atividade </h2>
-      <a href = "CRUD/create.php" >inserir mais Dados na Tabela </a> <br>
-      <a href = "CRUD/read.php" > Vizualizar </a>
+      <a href = "CRUD/create.php" >Inserir informações na Tabela </a> <br>
+      <a href = "CRUD/read.php" > Vizualizar tabela </a>
          <br>
 
       <h2> Segunda atividade: CRUD </h2>
