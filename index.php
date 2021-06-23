@@ -8,11 +8,11 @@
 </head>
 <body>
       <h2> Primeira Atividade </h2>
-      <a href = "CRUD/create.php" >Inserir informações na Tabela </a> <br>
+      <a href = "cadastro.html">Inserir informações na Tabela </a> <br>
       <a href = "CRUD/read.php" > Vizualizar tabela </a>
 <hr>
       <h2> Segunda atividade:</h2>
-      <h2>C<a href="CRUD/create.php">riate</a></h2>
+      <h2>C<a href = "cadastro.html">riate</a></h2>
       <h2>R<a href="CRUD/read.php">ead</a></h2>
       <h2>U<a href="CRUD/update.php">pdate</a></h2>
       <h2>D<a href="CRUD/delete.php">elete</a></h2>
