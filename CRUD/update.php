@@ -1,3 +1,4 @@
+<title>Update</title
 <?php
 $servername = "localhost";
 $username = "root";

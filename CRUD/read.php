@@ -1,3 +1,4 @@
+<title>Read</title
 <?php
 echo "<table style='border: solid 1px black;'>";
 echo "<tr><th>Id</th><th>Nome</th><th>Disciplina</th><th>nota1</th><th>nota2</th></tr>";

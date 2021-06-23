@@ -1,9 +1,10 @@
+<title>Creata</title
 <?php
-$nome_ = $_POST['nome'];
-$disciplina = $_POST['Disciplina'];
+$Nome = $_POST['Nome'];
+$Disciplina = $_POST['Disciplina'];
 $nota1 = $_POST['nota1'];
 $nota2 = $_POST['nota2'];
-var_dump($nome,$disciplina,$nota1,$nota2);
+var_dump($Nome, $Disciplina, $nota1, $nota2);
 
 $servername = "localhost";
 $username = "root";

@@ -1,3 +1,4 @@
+<title>Delete</title
 <?php
 $servername = "localhost";
 $username = "root";
