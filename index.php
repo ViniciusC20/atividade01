@@ -9,7 +9,8 @@
 <body>
       <h2> Primeira Atividade </h2>
       <a href = "cadastro.html">Inserir informações na Tabela </a> <br>
-      <a href = "CRUD/read.php" > Vizualizar tabela </a>
+      <a href = "CRUD/read.php" > Vizualizar tabela</a><br><br>
+      <a href = "visualizar.php" > Vizualizar tabela</a>
 <hr>
       <h2> Segunda atividade:</h2>
       <h2>C<a href = "cadastro.html">riate</a></h2>
