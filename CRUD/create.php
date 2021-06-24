@@ -13,6 +13,7 @@ $Nome = $_POST['Nome'];
 $Disciplina = $_POST['Disciplina'];
 $nota1 = $_POST['nota1'];
 $nota2 = $_POST['nota2'];
+$Id = $_POST['Id'];
 
 $servername = "localhost";
 $username = "root";
@@ -34,12 +35,15 @@ try {
   VALUES ('$Nome', '$Disciplina', '$nota1', '$nota2')";
   // use exec() because no results are returned
   $conn->exec($sql);
-  echo "Cadastro feito com sucesso, você já pode olhar algumas notas!";
+  //echo "Cadastro feito com sucesso, você já pode olhar algumas notas!";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
 
 $conn = null;
+
+header('Location:./read.php');
+
 ?>
 <br> <br>
       <a href = "index.php">voltar </a> <br>

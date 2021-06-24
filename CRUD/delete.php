@@ -8,8 +8,9 @@
 </head>
 <body>
  
-
 <?php
+$delete = $_GET['Id'];
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -20,8 +21,9 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+  
   // sql to delete a record
-  $sql = "DELETE FROM atividade01 WHERE id=22";
+  $sql = "DELETE FROM atividade01 WHERE id= $delete";
 
   // use exec() because no results are returned
   $conn->exec($sql);

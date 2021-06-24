@@ -9,6 +9,8 @@
 <body>
 
 <?php
+$update = $_GET['Id'];
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -37,5 +39,6 @@ $conn = null;
 ?>
 <br> <br>
       <a href = "index.php">voltar </a> <br>
+      
 </body>
 </html>

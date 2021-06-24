@@ -52,7 +52,17 @@ try {
 $conn = null;
 echo "</table>";
 ?>
+
+<form name ="Form_exc" action="delete.php" method="GET">
+<input class="form-control" type="text" name="Id" placeholder="Deletar" aria-label="default input example">
+<button type="submit" class="btn btn-primary">Delete</button>
+</form>
+
+<form name ="Form_edit" action="update.php" method="GET">
+<button type="submit" class="btn btn-primary">Update</button>
+</form>
+
 <br> <br>
-      <a href = "index.php">voltar </a> <br>
+      <a href = "http://localhost/atividade01/index.php">voltar </a> <br>
 </body>
 </html>
