@@ -41,5 +41,8 @@
 </table>
       </form>
       <hr> 
+
+      <br> <br>
+      <a href = "index.php">voltar </a> <br>
 </body >
 </html >

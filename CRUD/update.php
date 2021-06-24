@@ -35,5 +35,7 @@ try {
 
 $conn = null;
 ?>
+<br> <br>
+      <a href = "index.php">voltar </a> <br>
 </body>
 </html>
