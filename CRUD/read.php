@@ -52,5 +52,7 @@ try {
 $conn = null;
 echo "</table>";
 ?>
+<br> <br>
+      <a href = "index.php">voltar </a> <br>
 </body>
 </html>
