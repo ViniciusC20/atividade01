@@ -36,6 +36,6 @@ $conn = null;
 ?>
 
 <br> <br>
-      <a href = "index.php">voltar </a> <br>
+<a href = "http://localhost/atividade01/index.php">voltar </a> <br>
 </body>
 </html>
