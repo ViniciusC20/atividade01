@@ -15,10 +15,10 @@ $nota1 = $_POST['nota1'];
 $nota2 = $_POST['nota2'];
 $Id = $_POST['Id'];
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "1atividade";
+$servername = "sql202.epizy.com";
+$username = "epiz_28967693";
+$password = "NnX5picn7fb";
+$dbname = "epiz_28967693_atv";
 
 //conexao infinity
 //$servername = "sql111.epizy.com";	
